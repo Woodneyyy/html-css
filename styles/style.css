@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-.root{
-    --cor-primaria:#0A0045;
-    --cor-secundaria:
+:root{
+    --cor-primaria:#BAC0DE;
+    --cor-secundaria:#8A75E0;
+    --cor-rodape:#D4C5E0;
 }
 
 * {
@@ -16,8 +17,8 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #0A0045;
-    color: #F2D8D8;
+    background-color:var(--cor-primaria);
+    color:#190C1E;
     box-sizing: border-box;
     font-family: "Press Start 2P", system-ui;
     font-size: 20px;
@@ -25,7 +26,16 @@ body {
 .cabecalho {
     padding: 2%;
     color: #F2D8D8;
-    background-color: #7e438b;
+    background-color:var(--cor-secundaria);
+}
+.menu_link{
+    padding: 15px;
+    text-decoration: none;
+    width: 200px;
+    border-radius: 40px;
+    font-size: 24px;
+    display: flex;
+    color:#F2D8D8;
 }
 
 .cabecalho_link {
@@ -63,7 +73,7 @@ strong {
     align-items: center;
     color: #F2D8D8;
     font-size: 30px;
-    background-color: #37153f;
+    background-color: #6A37DB;
     color: #F2D8D8;
     width: 280px;
     border-radius: 40px;
@@ -79,7 +89,7 @@ strong {
     align-items: center;
     color: #F2D8D8;
     font-size: 30px;
-    background-color: #37153f;
+    background-color: #6A37DB;
     color: #F2D8D8;
     width: 280px;
     border-radius: 40px;
@@ -90,7 +100,10 @@ strong {
 }
 
 a:hover {
-    background-color: #2B0434;
+    background-color: #6B1BDB;
+    box-shadow: 0 0 40px 40px #10171b inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
 
 }
 
@@ -108,8 +121,8 @@ a:hover {
     justify-content: flex-end;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 30px;
-    color: #7e438b;
-    background-color: #F2D8D8;
+    color:var(--cor-rodape);
+    background-color: #8A75E0;
 }
 
 .apresentacao_links {
