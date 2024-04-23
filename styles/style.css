@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.root{
+    --cor-primaria:#0A0045;
+    --cor-secundaria:
+}
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0A0045;
+    color: #F2D8D8;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+}
+.cabecalho {
+    padding: 2%;
+    color: #F2D8D8;
+    background-color: #7e438b;
+}
+
+.cabecalho_link {
+    display: flex;
+    justify-content: space-around;
+
+}
+strong {
+    display: flex;
+    justify-content: center;
+    color: #7e438b;
+    font-weight: bold;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    gap: 15px;
+}
+
+.eu {
+    height: 500px;
+    border: solid #37153f 20px;
+    border-radius: 90px;
+    padding: 0px 0px;
+
+}
+
+.linkedin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F2D8D8;
+    font-size: 30px;
+    background-color: #37153f;
+    color: #F2D8D8;
+    width: 280px;
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: 24px;
+    padding: 30px 30px;
+    text-decoration: none;
+}
+
+.github {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F2D8D8;
+    font-size: 30px;
+    background-color: #37153f;
+    color: #F2D8D8;
+    width: 280px;
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: 24px;
+    padding: 30px 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #2B0434;
+
+}
+
+.githubfavicon {
+    width: 70px;
+    padding: 15px;
+}
+
+.linkedinfavicon {
+    width: 90px;
+}
+
+.rodape {
+
+    justify-content: flex-end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    color: #7e438b;
+    background-color: #F2D8D8;
+}
+
+.apresentacao_links {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+@media(max-width:900px) {
+
+    .apresentacao {
+        flex-direction: column;
+        display: flex;
+        width: 80%;
+
+    }
+
+}
