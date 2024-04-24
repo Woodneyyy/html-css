@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-:root{
-    --cor-primaria:#BAC0DE;
-    --cor-secundaria:#8A75E0;
-    --cor-rodape:#D4C5E0;
+:root {
+    --cor-primaria: #BAC0DE;
+    --cor-secundaria: #1A5774 ;
+    --cor-rodape: #D4C5E0;
 }
 
 * {
@@ -17,25 +17,50 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color:var(--cor-primaria);
-    color:#190C1E;
+    text-align:start;
+    color: #D4C5E0;
+    font-style:oblique;
     box-sizing: border-box;
     font-family: "Press Start 2P", system-ui;
     font-size: 20px;
 }
+.fundo_pagina_1{
+    background-image: url(/assets/wallpaper.jpg);
+    background: cover;
+}
+
+
 .cabecalho {
+    background-image: url(/assets/wallpaper.jpg);
     padding: 2%;
     color: #F2D8D8;
-    background-color:var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
 }
-.menu_link{
-    padding: 15px;
+
+.menu_link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
     width: 200px;
     border-radius: 40px;
-    font-size: 24px;
+    background-color:#1A5774;
+    padding: 15px 0 15px 0;
+    color: #F2D8D8;
+}
+
+.menu_link_home {
+    padding: 15px 0 15px 0;
     display: flex;
-    color:#F2D8D8;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    border-radius: 40px;
+    background-color: #1A5774;
+    color: #F2D8D8;
+    text-decoration: none;
 }
 
 .cabecalho_link {
@@ -43,6 +68,7 @@ body {
     justify-content: space-around;
 
 }
+
 strong {
     display: flex;
     justify-content: center;
@@ -51,9 +77,10 @@ strong {
 }
 
 .apresentacao {
+    color: #D4C5E0;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 0 15%;
     padding: 20px;
     align-items: center;
     gap: 15px;
@@ -61,8 +88,8 @@ strong {
 
 .eu {
     height: 500px;
-    border: solid #37153f 20px;
-    border-radius: 90px;
+    border: solid #4E6AA9 20px;
+    border-radius: 90%;
     padding: 0px 0px;
 
 }
@@ -73,7 +100,7 @@ strong {
     align-items: center;
     color: #F2D8D8;
     font-size: 30px;
-    background-color: #6A37DB;
+    background-color: #001E44;
     color: #F2D8D8;
     width: 280px;
     border-radius: 40px;
@@ -89,7 +116,7 @@ strong {
     align-items: center;
     color: #F2D8D8;
     font-size: 30px;
-    background-color: #6A37DB;
+    background-color: #001E44;
     color: #F2D8D8;
     width: 280px;
     border-radius: 40px;
@@ -100,11 +127,10 @@ strong {
 }
 
 a:hover {
-    background-color: #6B1BDB;
-    box-shadow: 0 0 40px 40px #10171b inset, 0 0 0 0 #3498db;
-    -webkit-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
-
+    background-color: #1A5774;
+    box-shadow: 0 0 40px 40px #001E44 inset, 0 0 0 0 #031A20;
+    -webkit-transition: all 600ms ease-in-out;
+    transition: all 600ms ease-in-out;
 }
 
 .githubfavicon {
@@ -116,13 +142,14 @@ a:hover {
     width: 90px;
 }
 
-.rodape {
 
+.rodape {
+    display: flex;
     justify-content: flex-end;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 30px;
-    color:var(--cor-rodape);
-    background-color: #8A75E0;
+    padding: 25px;
+    color: var(--cor-rodape);
+    background-color: #001E44;
 }
 
 .apresentacao_links {
@@ -134,10 +161,31 @@ a:hover {
 @media(max-width:900px) {
 
     .apresentacao {
-        flex-direction: column;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
         width: 80%;
-
     }
+}
 
+.sobre_mim_pag_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size:medium;
+    gap: 30px;
+
+
+}
+
+.foto_minha {
+    width: 400px;
+    border-radius: 30px;
+    border: #6A37DB solid 10px;
+    gap: 15px;
+}
+
+.fundo_page_2{
+    background-image: url(/assets/time_adventure.jpg);
 }
