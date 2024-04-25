@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --cor-primaria: #BAC0DE;
+    --cor-secundaria: #1A5774 ;
+    --cor-rodape: #D4C5E0;
+}
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+.contato {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+.contato_lista li{
+font-size: large;
+}
