@@ -8,7 +8,6 @@
 
 * {
 
-    margin: 0px;
     padding: 0px;
 }
 
@@ -123,7 +122,6 @@ strong {
 }
 .email{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: #F2D8D8;
     font-size: 30px;
@@ -131,7 +129,7 @@ strong {
     color: #F2D8D8;
     width: 280px;
     border-radius: 40px;
-    padding: 0px 8px;
+    padding: 0px 0px;
     text-decoration: none;
 }
 
@@ -152,12 +150,16 @@ a:hover {
     width: 90px;
 }
 
+.emailfavicon{
+    display: flex;
+    width: 80px;
+}
 
 .rodape {
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 25px;
+    padding: 15px;
     color: var(--cor-rodape);
     background-color: #001E44;
 }
